@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h2 th:text="${title}">Document</h2>
+</head>
+
+<body>
+    <div style="justify-content: left;">
+        <form th:action="/form" th:method="post">
+            <div>
+                <h4>Username</h4>
+                <input name="userName" id="username" type="text">
+            </div>
+            <div>
+                <h4>Email</h4>
+                <input name="email" id="email" type="text">
+            </div>
+            <div>
+                <h4>Password</h4>
+                <input name="password" id="password" type="password">
+            </div>
+            <div>
+                <input name="submitbutton" type="submit" value="Submit">
+            </div>
+        </form>
+        <!-- <form th:action="/form" th:method="post" th:object="${user}">
+            <div>
+                <h4>Username</h4>
+                <input name="userName" id="username" type="text" th:field="*{userName}">
+            </div>
+            <div>
+                <h4>Email</h4>
+                <input name="email" id="email" type="text" th:field="*{email}">
+            </div>
+            <div>
+                <h4>Password</h4>
+                <input name="password" id="password" type="password" th:field="*{password}">
+            </div>
+            <div>
+                <input name="submitbutton" type="submit" value="Submit">
+            </div>
+        </form> -->
+    </div>
+</body>
+
+</html>
